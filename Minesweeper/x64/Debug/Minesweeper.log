@@ -1,0 +1,32 @@
+﻿  main.cpp
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,27): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(7,6): error C2653: Minesweeper: не является именем класса или пространства имен
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(28,6): error C2653: Minesweeper: не является именем класса или пространства имен
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(71,6): error C2653: Minesweeper: не является именем класса или пространства имен
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(96,6): error C2653: Minesweeper: не является именем класса или пространства имен
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\main.cpp(10,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Minesweeper.cpp
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,27): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(7,6): error C2653: Minesweeper: не является именем класса или пространства имен
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(28,6): error C2653: Minesweeper: не является именем класса или пространства имен
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(71,6): error C2653: Minesweeper: не является именем класса или пространства имен
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(96,6): error C2653: Minesweeper: не является именем класса или пространства имен
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,16): error C2374: SIZE: переопределение; множественная инициализация
+      C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,16):
+       см. объявление "SIZE"
+  
+C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,16): error C2086: const unsigned int SIZE: переопределение
+      C:\Users\Denis\Documents\projects C++\Minesweeper\Minesweeper.cpp(3,16):
+       см. объявление "SIZE"
+  
+  Создание кода...

@@ -3,6 +3,9 @@
 
 int main()
 {
+
+    Minesweeper b;
+
     int bombs;
     srand(time(0));
     int x, y;
@@ -25,9 +28,9 @@ int main()
     std::cin >> bombs;
 
 
-    fill(a, bombs);
+    b.fill(a, bombs);
     std::cout << std::endl;
-    fakematrix(p);
+    b.fakematrix(p);
     std::cout << std::endl;
 
     while (c < SIZE)
@@ -44,23 +47,23 @@ int main()
         {
             p[x][y] = a[x][y];
             std::cout << std::endl;
-            prints(p);
+            b.prints(p);
             c++;
         }
-        if (a[x][y] == 'X')
+        else if (a[x][y] == 'X')
         {
             p[x][y] = a[x][y];
             std::cout << "Oops! You lose. Would you like to play again? If yes press Y" << std::endl;
-            prints(p);
+            b.prints(p);
 
             return 0;
         }
-        if (a[x][y] == '0')
+        else if (a[x][y] == '0')
         {
-            empty(a, p, x, y);
-            prints(p);
+            b.empty(a, p, x, y);
+            b.prints(p);
         }
-        if (c == 72)
+        else if (c == 72)
         {
             std::cout << "WIN" << std::endl;
         }
