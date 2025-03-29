@@ -118,6 +118,19 @@ bool Board::openCell(int x, int y)
     }
     else
     {
+        grid_[y][x].Open();
+
+        if (grid_[y][x].getNearbyBombs() == 0 && !grid_[y][x].getHasBomb()) 
+        {
+            for (int dy = -1; dy <= 1; dy++)
+            {
+                for (int dx = -1; dx <= 1; dx++) 
+                {
+                    openCell(x + dx, y + dy);
+                }
+            }
+        }
+
         return false;
     }
 }

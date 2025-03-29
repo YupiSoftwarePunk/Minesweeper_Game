@@ -12,7 +12,7 @@ int main()
     SetConsoleOutputCP(1251);
 
 
-    Game game(10, 10, 50); 
+    Game game(10, 10, 5); 
     game.start();
     return 0;
 }

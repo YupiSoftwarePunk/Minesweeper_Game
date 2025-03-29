@@ -36,6 +36,7 @@ bool Game::getGameOver()
 
 
 
+// Запуск отрисовки сетки, ввода координат и действия, проверка на выигрыш
 void Game::start()
 {
 	while ((!gameOver_ && player_.getLives() > 0) || (!gameOver_ || player_.getLives() > 0))
@@ -46,6 +47,8 @@ void Game::start()
 	}
 }
 
+
+// отрисовка сетки
 void Game::printBoard()
 {
 	const auto& grid = board_.getGrid();
@@ -64,7 +67,7 @@ void Game::printBoard()
 			}
 			else if (cell.getIsOpen())
 			{
-				std::cout << "  ";
+				std::cout << "_ ";
 			}
 			else if (cell.getHasBomb())
 			{
@@ -80,6 +83,8 @@ void Game::printBoard()
 }
 
 
+
+// ввод координат и действия
 void Game::handleInput()
 {
 	int x, y;
@@ -117,6 +122,9 @@ void Game::handleInput()
 	}
 }
 
+
+
+// проверка на выигрыш
 void Game::checkGameState()
 {
 	if (board_.checkWin()) 

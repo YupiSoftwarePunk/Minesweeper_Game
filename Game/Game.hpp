@@ -25,12 +25,19 @@ public:
     bool getGameOver();
 
 
+    // Запуск отрисовки сетки, ввода координат и действия, проверка на выигрыш
     void start();
 
+
+    // отрисовка сетки
     void printBoard();
 
+
+    // ввод координат и действия
     void handleInput();
 
+
+    // проверка на выигрыш
     void checkGameState();
 
 
