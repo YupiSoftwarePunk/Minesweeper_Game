@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <random>
-#include "Cell.hpp"
+#include "../Cell/Cell.hpp"
 
 class Board 
 {

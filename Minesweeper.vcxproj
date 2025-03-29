@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.hpp" />
-    <ClInclude Include="Cell.hpp" />
+    <ClInclude Include="Board\Board.hpp" />
+    <ClInclude Include="Cell\Cell.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Board\Board.cpp" />
+    <ClCompile Include="Cell\Cell.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
