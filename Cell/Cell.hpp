@@ -3,10 +3,13 @@
 class Cell
 {
 public:
+    // конструктор
     Cell() : isOpen_(false), hasBomb_(false), isMarked_(false), nearbyBombs_(0) {}
 
     // Сеттеры и геттеры
+    void setIsOpen(bool isOpen);
     void setHasBomb(bool value);
+    void setIsMarked(bool isMarked);
     void setNearbyBombs(int count);
 
 

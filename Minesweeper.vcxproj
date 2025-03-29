@@ -21,10 +21,15 @@
   <ItemGroup>
     <ClInclude Include="Board\Board.hpp" />
     <ClInclude Include="Cell\Cell.hpp" />
+    <ClInclude Include="Player\Player.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board\Board.cpp" />
     <ClCompile Include="Cell\Cell.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

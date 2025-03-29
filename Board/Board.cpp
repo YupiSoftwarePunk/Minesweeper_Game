@@ -17,6 +17,11 @@ void Board::setTotalMines(int mines)
 	this->totalMines_ = mines;
 }
 
+void Board::setGrid(std::vector < std::vector<Cell>>& grid)
+{
+    this->grid_ = grid;
+}
+
 
 
 // Геттеры

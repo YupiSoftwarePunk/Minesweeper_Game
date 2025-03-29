@@ -7,6 +7,7 @@
 class Board 
 {
 public:
+    // конструктор
     Board(int height, int width, int mines) : height_(height), width_(width), totalMines_(mines)
     {
         grid_.resize(height_, std::vector<Cell>(width_));
@@ -19,6 +20,7 @@ public:
     void setHeight(int height);
     void setWidth(int width);
     void setTotalMines(int mines);
+    void setGrid(std::vector < std::vector<Cell>>& grid);
 
 
     // Геттеры

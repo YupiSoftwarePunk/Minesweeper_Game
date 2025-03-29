@@ -2,9 +2,20 @@
 
 
 // Сеттеры
+
+void Cell::setIsOpen(bool isOpen)
+{
+	this->isOpen_ = isOpen;
+}
+
 void Cell::setHasBomb(bool value)
 {
-	hasBomb_ = value;
+	this->hasBomb_ = value;
+}
+
+void Cell::setIsMarked(bool isMarked)
+{
+	this->isMarked_ = isMarked;
 }
 
 void Cell::setNearbyBombs(int count)
