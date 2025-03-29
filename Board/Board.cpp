@@ -50,20 +50,18 @@ const std::vector<std::vector<Cell>>& Board::getGrid() const
 // Размещение мин случайным образом
 void Board::placeMines()
 {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, height_ * width_ - 1);
+    srand(time(0));
 
     int placed = 0;
     while (placed < totalMines_) 
     {
-        int pos = dis(gen);
-        int y = pos / width_;
-        int x = pos % width_;
+        int posititon = rand() % (height_ * width_);
+        int x = posititon / width_;
+        int y = posititon % width_;
 
-        if (!grid_[y][x].getHasBomb()) 
+        if (!grid_[x][y].getHasBomb()) 
         {
-            grid_[y][x].setHasBomb(true);
+            grid_[x][y].setHasBomb(true);
             placed++;
         }
     }

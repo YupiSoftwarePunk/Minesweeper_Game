@@ -1,7 +1,8 @@
 #pragma once
 
 #include <vector>
-#include <random>
+#include <cstdlib> 
+#include <ctime>
 #include "../Cell/Cell.hpp"
 
 class Board 
