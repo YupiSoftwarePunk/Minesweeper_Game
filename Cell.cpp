@@ -1,7 +1,7 @@
 #include "Cell.hpp"
 
 
-
+// Сеттеры
 void Cell::setHasBomb(bool value)
 {
 	hasBomb_ = value;
@@ -13,7 +13,7 @@ void Cell::setNearbyBombs(int count)
 }
 
 
-
+// Геттеры
 bool Cell::getIsOpen() const
 {
 	return isOpen_;
@@ -35,7 +35,7 @@ int Cell::getNearbyBombs() const
 }
 
 
-
+// Открыть ячейку
 void Cell::Open()
 {
 	if (!isMarked_)
@@ -44,6 +44,8 @@ void Cell::Open()
 	}
 }
 
+
+// Пометить ячейку
 void Cell::Mark()
 {
 	if (!isOpen_)

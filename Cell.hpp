@@ -16,7 +16,10 @@ public:
     int getNearbyBombs() const;
 
 
+    // ќткрыть €чейку
     void Open();
+
+    // ѕометить €чейку
     void Mark();
 
 

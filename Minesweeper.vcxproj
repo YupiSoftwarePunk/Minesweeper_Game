@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board.hpp" />
     <ClInclude Include="Cell.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
