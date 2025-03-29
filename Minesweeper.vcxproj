@@ -21,11 +21,14 @@
   <ItemGroup>
     <ClInclude Include="Board\Board.hpp" />
     <ClInclude Include="Cell\Cell.hpp" />
+    <ClInclude Include="Game\Game.hpp" />
     <ClInclude Include="Player\Player.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board\Board.cpp" />
     <ClCompile Include="Cell\Cell.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Main\main.cpp" />
     <ClCompile Include="Player\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
