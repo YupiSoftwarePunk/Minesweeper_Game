@@ -3,6 +3,8 @@
 
 class Player
 {
+
+
 public:
     // конструктор
     Player(int lives) : lives_(lives), level_(1) {}

@@ -7,6 +7,8 @@
 
 class Board 
 {
+
+
 public:
     // конструктор
     Board(int height, int width, int mines) : height_(height), width_(width), totalMines_(mines)

@@ -2,6 +2,8 @@
 
 class Cell
 {
+
+
 public:
     // конструктор
     Cell() : isOpen_(false), hasBomb_(false), isMarked_(false), nearbyBombs_(0) {}

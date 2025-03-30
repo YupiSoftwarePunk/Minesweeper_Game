@@ -5,7 +5,8 @@
 #include "../Board/Board.hpp"
 #include "../Player/Player.hpp"
 
-class Game {
+class Game 
+{
 
 
 public:
