@@ -108,9 +108,12 @@ void Board::calculateNearbyBombs()
 // ќткрытие €чейки и открытие пустых областей
 bool Board::openCell(int x, int y)
 {
-    if (x < 0 || x >= width_ || y < 0 || y >= height_ || grid_[y][x].getIsOpen()) return false;
+    if (x < 0 || x >= width_ || y < 0 || y >= height_ || grid_[y][x].getIsOpen())
+    {
+        return false;
+    }
 
-    if (grid_[y][x].getHasBomb()) 
+    else if (grid_[y][x].getHasBomb()) 
     {
         return true; 
     }

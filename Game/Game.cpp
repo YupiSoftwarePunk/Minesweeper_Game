@@ -59,7 +59,7 @@ void Game::printBoard()
 		{
 			if (cell.getIsMarked())
 			{
-				std::cout << "F ";
+				std::cout << "M ";
 			}
 			else if (!cell.getIsOpen()) 
 			{ 
@@ -103,6 +103,7 @@ void Game::handleInput()
 	if (action == 'O') 
 	{
 		bool hitBomb = board_.openCell(x, y);
+		board_.calculateNearbyBombs();
 
 		if (hitBomb) 
 		{
