@@ -53,10 +53,24 @@ void Game::PrintBoard()
 {
 	const auto& grid = board_.getGrid();
 
-	for (const auto& row : grid) 
+
+	std::cout << "   ";
+	for (int x = 0; x < grid[0].size(); x++) 
 	{
-		for (const auto& cell : row) 
+		std::cout << x + 1 << " ";
+	}
+	std::cout << "\n";
+
+
+
+	for (int y = 0; y < grid.size(); y++) 
+	{
+		std::cout << y + 1 << " |";  
+
+		for (int x = 0; x < grid[y].size(); x++) 
 		{
+			const auto& cell = grid[y][x];
+		
 			if (cell.getIsMarked())
 			{
 				std::cout << "M ";
@@ -95,9 +109,11 @@ void Game::ActionInput()
 
 	std::cout << "¬ведите координату x: ";
 	std::cin >> x;
+	x--;
 
 	std::cout << "¬ведите координату y: ";
 	std::cin >> y;
+	y--;
 
 
 	if (action == 'O') 

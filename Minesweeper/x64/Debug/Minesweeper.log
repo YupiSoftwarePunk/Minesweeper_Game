@@ -1,6 +1,2 @@
-﻿  Board.cpp
-C:\Users\Denis\Documents\projects C++\Minesweeper\Board\Board.cpp(53,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Game.cpp
-  main.cpp
-  Создание кода...
+﻿  Game.cpp
   Minesweeper.vcxproj -> C:\Users\Denis\Documents\projects C++\Minesweeper\x64\Debug\Minesweeper.exe
