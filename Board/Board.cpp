@@ -48,7 +48,7 @@ const std::vector<std::vector<Cell>>& Board::getGrid() const
 
 
 // Размещение мин случайным образом
-void Board::placeMines()
+void Board::PlaceMines()
 {
     srand(time(0));
 
@@ -69,7 +69,7 @@ void Board::placeMines()
 
 
 // Подсчет мин вокруг каждой ячейки
-void Board::calculateNearbyBombs()
+void Board::CalculateNearbyBombs()
 {
     for (int y = 0; y < height_; y++) 
     {
@@ -106,7 +106,7 @@ void Board::calculateNearbyBombs()
 
 
 // Открытие ячейки и открытие пустых областей
-bool Board::openCell(int x, int y)
+bool Board::OpenCell(int x, int y)
 {
     if (x < 0 || x >= width_ || y < 0 || y >= height_ || grid_[y][x].getIsOpen())
     {
@@ -127,7 +127,7 @@ bool Board::openCell(int x, int y)
             {
                 for (int dx = -1; dx <= 1; dx++) 
                 {
-                    openCell(x + dx, y + dy);
+                    OpenCell(x + dx, y + dy);
                 }
             }
         }
@@ -136,7 +136,7 @@ bool Board::openCell(int x, int y)
     }
 }
 
-void Board::markCell(int x, int y)
+void Board::MarkCell(int x, int y)
 {
     if (x >= 0 && x < width_ && y >= 0 && y < height_) 
     {
@@ -147,7 +147,7 @@ void Board::markCell(int x, int y)
 
 
 // Проверка на победу (все безопасные ячейки открыты)
-bool Board::checkWin() const
+bool Board::CheckWin() const
 {
     for (const auto& row : grid_) 
     {

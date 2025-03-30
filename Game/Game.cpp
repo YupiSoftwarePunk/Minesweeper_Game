@@ -37,19 +37,19 @@ bool Game::getGameOver()
 
 
 // Запуск отрисовки сетки, ввода координат и действия, проверка на выигрыш
-void Game::start()
+void Game::Start()
 {
 	while ((!gameOver_ && player_.getLives() > 0) || (!gameOver_ || player_.getLives() > 0))
 	{
-		printBoard();
-		handleInput();
-		checkGameState();
+		PrintBoard();
+		ActionInput();
+		CheckGameStatus();
 	}
 }
 
 
 // отрисовка сетки
-void Game::printBoard()
+void Game::PrintBoard()
 {
 	const auto& grid = board_.getGrid();
 
@@ -73,7 +73,7 @@ void Game::printBoard()
 			{
 				std::cout << "* ";
 			}
-			else
+			else if (cell.getIsMarked())
 			{
 				std::cout << cell.getNearbyBombs() << " ";
 			}
@@ -85,7 +85,7 @@ void Game::printBoard()
 
 
 // ввод координат и действия
-void Game::handleInput()
+void Game::ActionInput()
 {
 	int x, y;
 	char action;
@@ -102,19 +102,19 @@ void Game::handleInput()
 
 	if (action == 'O') 
 	{
-		bool hitBomb = board_.openCell(x, y);
-		board_.calculateNearbyBombs();
+		bool hitBomb = board_.OpenCell(x, y);
+		board_.CalculateNearbyBombs();
 
 		if (hitBomb) 
 		{
-			player_.loseLife();
+			player_.LoseLife();
 			gameOver_ = true;
 			std::cout << "Вы наступили на мину! Осталось жизней: " << player_.getLives() << "\n";
 		}
 	}
 	else if (action == 'M')
 	{
-		board_.markCell(x, y); 
+		board_.MarkCell(x, y); 
 	}
 	else
 	{
@@ -126,12 +126,12 @@ void Game::handleInput()
 
 
 // проверка на выигрыш
-void Game::checkGameState()
+void Game::CheckGameStatus()
 {
-	if (board_.checkWin()) 
+	if (board_.CheckWin()) 
 	{
 		std::cout << "Победа! Уровень пройден!\n";
-		player_.levelUp();
+		player_.LevelUp();
 		gameOver_ = true;
 	}
 }

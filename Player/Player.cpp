@@ -27,14 +27,14 @@ int Player::getLevel()
 
 
 // повышение уровня игрока
-void Player::levelUp()
+void Player::LevelUp()
 {
 	level_++;
 }
 
 
 // уменьшение жизней игрока
-void Player::loseLife()
+void Player::LoseLife()
 {
 	if (lives_ > 0)
 	{

@@ -12,8 +12,8 @@ public:
     Board(int height, int width, int mines) : height_(height), width_(width), totalMines_(mines)
     {
         grid_.resize(height_, std::vector<Cell>(width_));
-        placeMines();
-        calculateNearbyBombs();
+        PlaceMines();
+        CalculateNearbyBombs();
     }
 
 
@@ -32,23 +32,23 @@ public:
 
 
     // Размещение мин случайным образом
-    void placeMines();
+    void PlaceMines();
 
 
     // Подсчет мин вокруг каждой ячейки
-    void calculateNearbyBombs();
+    void CalculateNearbyBombs();
 
 
     // Открытие ячейки и открытие пустых областей
-    bool openCell(int x, int y);
+    bool OpenCell(int x, int y);
 
 
     // Пометка ячейки, что в ней есть бомба
-    void markCell(int x, int y);
+    void MarkCell(int x, int y);
 
 
     // Проверка на победу (все безопасные ячейки открыты)
-    bool checkWin() const;
+    bool CheckWin() const;
 
 
 private:

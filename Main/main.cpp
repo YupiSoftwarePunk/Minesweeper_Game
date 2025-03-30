@@ -13,6 +13,6 @@ int main()
 
 
     Game game(10, 10, 5); 
-    game.start();
+    game.Start();
     return 0;
 }

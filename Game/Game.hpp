@@ -26,19 +26,19 @@ public:
 
 
     // Запуск отрисовки сетки, ввода координат и действия, проверка на выигрыш
-    void start();
+    void Start();
 
 
     // отрисовка сетки
-    void printBoard();
+    void PrintBoard();
 
 
     // ввод координат и действия
-    void handleInput();
+    void ActionInput();
 
 
     // проверка на выигрыш
-    void checkGameState();
+    void CheckGameStatus();
 
 
 private:

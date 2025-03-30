@@ -19,11 +19,11 @@ public:
 
 
     // повышение уровня игрока
-    void levelUp();
+    void LevelUp();
 
 
     // уменьшение жизней игрока
-    void loseLife();
+    void LoseLife();
 
 private:
     int lives_;
