@@ -81,7 +81,7 @@ void Game::PrintBoard()
 			}
 			else if (cell.getIsOpen())
 			{
-				std::cout << "_ ";
+				std::cout << cell.getNearbyBombs() << " ";
 			}
 			else if (cell.getHasBomb())
 			{

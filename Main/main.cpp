@@ -11,6 +11,8 @@ int main()
     SetConsoleOutputCP(1251);
 
 
+    std::cout << "\t\t\tДобро подаловать в игру Сапер!!\n\n";
+
     Game game(10, 10, 5); 
     game.Start();
     return 0;
